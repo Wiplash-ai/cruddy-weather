@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Cruddy Weather privacy</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <div class="page-tools"><a href="options.html">Settings</a><button type="button" data-theme-toggle aria-label="Switch color theme">☾</button></div>
+    <main>
+      <header><img src="assets/cruddy-mark.svg" alt="" class="settings-mascot"><div><span>PRIVACY / PLAIN LANGUAGE</span><h1>Your location<br>is not our hobby.</h1><p>Here is what the extension touches, what stays local, and what leaves the browser.</p></div></header>
+      <section><div class="section-number">01</div><div class="section-content"><h2>What stays here</h2><p>Your chosen location, units, attitude, light or dark theme, which attitude hints have already been shown, and the last valid settings-copy catalog are stored in this browser's local extension storage. Cruddy Weather contains no advertising or analytics and does not read page content, open tabs, or your full browsing history.</p></div></section>
+      <section><div class="section-number">02</div><div class="section-content"><h2>Your shortcuts stay yours</h2><p>The new-tab page asks your browser for its list of frequently visited websites and displays up to eight of them locally. Those website names and addresses are never sent to Cruddy Weather. Web searches go directly through your browser's configured search provider.</p></div></section>
+      <section><div class="section-number">03</div><div class="section-content"><h2>What leaves</h2><p>Forecast requests send your selected coordinates, location label, unit setting, and attitude to the Cruddy Weather API. Location searches send only the text you explicitly submit. If the browser's precise location provider fails after you press “Use my current location,” the API uses your network address to estimate a city-level location. The extension stores the resulting coordinates, not your network address.</p></div></section>
+      <section><div class="section-number">04</div><div class="section-content"><h2>Service boundaries</h2><p>Forecasts and alerts are normalized from the U.S. National Weather Service. Manual location search uses OpenStreetMap data, and approximate network location uses an IP geolocation service. The extension checks the Cruddy Weather API at most weekly for a public settings-copy update and sends no personal data in that request. Cruddy commentary is produced by Wiplash.ai and is not an official government product.</p></div></section>
+      <section><div class="section-number">05</div><div class="section-content"><h2>Limited use</h2><p>Cruddy Weather's use and transfer of information received from Google APIs adheres to the Chrome Web Store User Data Policy, including its Limited Use requirements. Read the <a href="https://labs.wiplash.ai/cruddy-weather/privacy/" target="_blank" rel="noreferrer">complete privacy policy</a> for retention, providers, rights, and contact details.</p></div></section>
+      <footer><span>Cruddy Weather</span><a href="https://wiplash.ai/" target="_blank" rel="noreferrer">Produced by Wiplash.ai</a></footer>
+    </main>
+    <script type="module" src="privacy.js"></script>
+  </body>
+</html>

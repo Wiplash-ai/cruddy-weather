@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Cruddy Weather",
+  "short_name": "Cruddy",
+  "version": "0.1.0",
+  "description": "Weather, web search, and your favorite sites—with a forecast that has something to say.",
+  "homepage_url": "https://labs.wiplash.ai/cruddy-weather/",
+  "permissions": ["storage", "search", "geolocation", "topSites", "favicon"],
+  "host_permissions": ["https://labs.wiplash.ai/cruddy-weather/api/*"],
+  "action": {
+    "default_title": "Open Cruddy Weather",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "96": "assets/icons/icon96.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "options_page": "options.html",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cruddy-weather@wiplash.ai",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["locationInfo", "searchTerms"]
+      }
+    }
+  }
+}

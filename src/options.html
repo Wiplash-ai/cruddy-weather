@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Cruddy Weather settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <div class="page-tools" aria-label="Page controls">
+      <a href="privacy.html">Privacy</a>
+      <button type="button" data-theme-toggle aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+    </div>
+    <main>
+      <header>
+        <img src="assets/cruddy-mark.svg" alt="" class="settings-mascot">
+        <div><span>CRUDDY CONTROL ROOM</span><h1>Pick your<br>poison.</h1><p>Location, language, temperature, and whether the lights stay on.</p></div>
+      </header>
+      <form id="settingsForm">
+        <section>
+          <div class="section-number">01</div>
+          <div class="section-content">
+            <h2>Where the hell are you?</h2>
+            <p>Cruddy currently knows the United States and its territories. The rest of Earth gets its turn later.</p>
+            <div class="location-search"><input id="locationQuery" aria-label="Search for a location" placeholder="Austin, TX or 78701" maxlength="120"><button id="findLocation" type="button">Find it <span>↗</span></button></div>
+            <button id="useCurrent" type="button" class="text-button">Use my current location <span>◎</span></button>
+            <div id="locationResults" class="results" aria-live="polite"></div>
+            <div id="chosenLocation" class="chosen">No location chosen yet.</div>
+            <p id="locationPreview" class="selection-copy copy-carousel"></p>
+          </div>
+        </section>
+        <section>
+          <div class="section-number">02</div>
+          <div class="section-content">
+            <h2>Attitude</h2>
+            <p>Pick how much restraint the forecast should pretend to have.</p>
+            <div class="choice-grid attitude-choices" id="levels">
+              <label><input type="radio" name="level" value="safe"><span><b>Safe</b><i>🙂</i></span></label>
+              <label><input type="radio" name="level" value="mild"><span><b>Mild</b><i>😏</i></span></label>
+              <label><input type="radio" name="level" value="hot"><span><b>Hot</b><i>🤬</i></span></label>
+              <label><input type="radio" name="level" value="spicy"><span><b>Spicy</b><i>🌶️</i></span></label>
+            </div>
+            <p id="attitudePreview" class="selection-copy copy-carousel"></p>
+          </div>
+        </section>
+        <section>
+          <div class="section-number">03</div>
+          <div class="section-content">
+            <h2>Temperature</h2>
+            <p>Same atmosphere. Different numbers to yell about.</p>
+            <div class="choice-grid units">
+              <label><input type="radio" name="units" value="us"><span><b>°F</b><i>Fahrenheit</i></span></label>
+              <label><input type="radio" name="units" value="metric"><span><b>°C</b><i>Celsius</i></span></label>
+              <label><input type="radio" name="units" value="scientific"><span><b>K</b><i>Kelvin</i></span></label>
+            </div>
+            <p id="unitPreview" class="selection-copy copy-carousel"></p>
+          </div>
+        </section>
+        <section>
+          <div class="section-number">04</div>
+          <div class="section-content">
+            <h2>Lights</h2>
+            <p>Black by default. White when you want the full daylight interrogation.</p>
+            <div class="choice-grid theme-choices">
+              <label><input type="radio" name="theme" value="dark"><span><b>Dark</b><i>Black + hot pink</i></span></label>
+              <label><input type="radio" name="theme" value="light"><span><b>Light</b><i>White + hot pink</i></span></label>
+            </div>
+            <p id="themePreview" class="selection-copy copy-carousel"></p>
+          </div>
+        </section>
+        <div class="save-row"><button type="submit">Save this forecast <span>↗</span></button><output id="status" aria-live="polite"></output></div>
+      </form>
+      <footer><span>Cruddy Weather</span><a href="https://wiplash.ai/" target="_blank" rel="noreferrer">Produced by Wiplash.ai</a></footer>
+    </main>
+    <script src="shared/runtime-config.js"></script>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

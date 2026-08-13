@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; font-family: Inter, Arial Black, Arial, sans-serif; background: transparent; }
+      .promo { position: relative; overflow: hidden; color: #fffafc; background: #050505; }
+      .promo::before { content: ""; position: absolute; inset: 0; opacity: .45; background-image: radial-gradient(circle at 1px 1px, #ff2a98 1px, transparent 0); background-size: 24px 24px; }
+      .promo::after { content: ""; position: absolute; width: 72%; aspect-ratio: 1; right: -35%; bottom: -130%; border: 48px solid #ff2a98; border-radius: 50%; opacity: .35; }
+      .copy { position: absolute; z-index: 2; }
+      .eyebrow { color: #ff2a98; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { margin: 0; font-weight: 1000; letter-spacing: -.075em; line-height: .86; }
+      h1 em { color: #ff2a98; font-style: normal; }
+      p { margin: 0; color: #cbb9c2; font-weight: 700; }
+      img { position: absolute; z-index: 2; filter: drop-shadow(10px 14px 0 rgba(255,42,152,.2)); transform: rotate(7deg); }
+      .small { width: 440px; height: 280px; }
+      .small .copy { inset: 36px 145px 30px 31px; }
+      .small .eyebrow { margin-bottom: 19px; font-size: 8px; }
+      .small h1 { font-size: 46px; }
+      .small p { margin-top: 20px; font-size: 10px; line-height: 1.4; }
+      .small img { right: 22px; bottom: 25px; width: 120px; }
+      .marquee { width: 1400px; height: 560px; }
+      .marquee .copy { inset: 92px 510px 70px 92px; }
+      .marquee .eyebrow { margin-bottom: 34px; font-size: 13px; }
+      .marquee h1 { font-size: 112px; }
+      .marquee p { margin-top: 37px; font-size: 22px; }
+      .marquee img { right: 105px; bottom: 62px; width: 330px; }
+      .opera { width: 300px; height: 188px; }
+      .opera .copy { inset: 24px 102px 18px 21px; }
+      .opera .eyebrow { margin-bottom: 13px; font-size: 6px; }
+      .opera h1 { font-size: 31px; }
+      .opera p { margin-top: 12px; font-size: 7px; line-height: 1.35; }
+      .opera img { right: 14px; bottom: 18px; width: 82px; }
+    </style>
+  </head>
+  <body>
+    <section class="promo small"><div class="copy"><div class="eyebrow">Weather with a mouth</div><h1>The forecast has seen some <em>shit.</em></h1><p>New-tab weather with an actual personality.</p></div><img src="../../src/assets/cruddy-mark.svg" alt=""></section>
+    <section class="promo marquee"><div class="copy"><div class="eyebrow">Cruddy Weather · Produced by Wiplash.ai</div><h1>The forecast has seen some <em>shit.</em></h1><p>Current conditions, seven days, four attitude levels, and zero fake enthusiasm.</p></div><img src="../../src/assets/cruddy-mark.svg" alt=""></section>
+    <section class="promo opera"><div class="copy"><div class="eyebrow">Cruddy Weather</div><h1>Weather with a <em>mouth.</em></h1><p>Your forecast. Its honest opinion.</p></div><img src="../../src/assets/cruddy-mark.svg" alt=""></section>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "cruddy-weather",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "node scripts/build.mjs",
+    "package": "node scripts/package.mjs",
+    "capture:store": "node scripts/capture-store-assets.mjs",
+    "smoke:newtab": "node scripts/smoke-newtab.mjs",
+    "smoke:newtab:production": "CRUDDY_EXTENSION_TARGET=chrome node scripts/smoke-newtab.mjs",
+    "verify:packages": "node scripts/verify-packages.mjs",
+    "verify": "npm run test && npm run build && npm run package && npm run verify:packages"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "playwright": "^1.62.1"
+  }
+}

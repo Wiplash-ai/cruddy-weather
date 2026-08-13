@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Cruddy Weather</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body data-surface="newtab">
+    <div class="utility-dock" aria-label="Page controls">
+      <button type="button" data-theme-toggle aria-label="Switch color theme">◐</button>
+      <button type="button" data-open-settings aria-label="Open settings">⚙</button>
+    </div>
+    <main class="newtab-main">
+      <section class="weather-stage" aria-label="Weather widget">
+        <div id="weatherRoot" class="newtab-weather-root">Loading forecast…</div>
+      </section>
+      <section class="search-zone" aria-labelledby="searchPrompt">
+        <div class="search-meta">
+          <p id="searchPrompt">Where to?</p>
+        </div>
+        <form id="webSearch" class="web-search" role="search">
+          <div class="search-provider">
+            <span id="searchProviderCaption">Search with</span>
+            <div class="search-picker" data-search-picker>
+              <select id="searchProvider" aria-hidden="true" tabindex="-1">
+                <option value="browser">Browser default</option>
+              </select>
+              <button class="search-picker-trigger" id="searchProviderTrigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="searchProviderMenu" aria-labelledby="searchProviderCaption searchProviderValue">
+                <span id="searchProviderValue">Browser default</span><i aria-hidden="true">⌄</i>
+              </button>
+              <div class="search-picker-menu" id="searchProviderMenu" role="listbox" aria-labelledby="searchProviderCaption" hidden></div>
+            </div>
+          </div>
+          <label class="search-query-label" for="searchQuery">Search the web</label>
+          <input id="searchQuery" name="q" type="search" autocomplete="off" autofocus placeholder="Search the web">
+          <button aria-label="Search">↗</button>
+        </form>
+        <small id="searchProviderNote" class="search-provider-note">Uses the search engine already selected in your browser.</small>
+      </section>
+      <section class="frequent-section" aria-labelledby="frequentHeading">
+        <div class="section-heading"><h2 id="frequentHeading">Your usual suspects</h2><span>Frequently visited</span></div>
+        <div id="frequentSites" class="frequent-sites" aria-live="polite"><span class="sites-loading">Finding your shortcuts…</span></div>
+      </section>
+    </main>
+    <footer class="product-footer"><span>Cruddy Weather</span><a href="https://wiplash.ai/" target="_blank" rel="noreferrer">Produced by Wiplash.ai</a></footer>
+    <script src="shared/runtime-config.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
