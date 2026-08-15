@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Cruddy Weather",
+  "name": "Funny Weather New Tab - Cruddy Weather",
   "short_name": "Cruddy",
-  "version": "0.1.0",
-  "description": "Weather, web search, and your favorite sites—with a forecast that has something to say.",
+  "version": "0.1.2",
+  "description": "Turn every new tab into a U.S. weather forecast with current conditions, alerts, search, frequent sites, and adjustable attitude.",
   "homepage_url": "https://labs.wiplash.ai/cruddy-weather/",
   "permissions": ["storage", "search", "geolocation", "topSites", "favicon"],
   "host_permissions": ["https://labs.wiplash.ai/cruddy-weather/api/*"],

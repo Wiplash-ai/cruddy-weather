@@ -6,7 +6,7 @@ const manifest = JSON.parse(await readFile(new URL("../src/manifest.json", impor
 
 test("uses Manifest V3 with popup and new-tab surfaces", () => {
   assert.equal(manifest.manifest_version, 3);
-  assert.equal(manifest.name, "Cruddy Weather");
+  assert.equal(manifest.name, "Funny Weather New Tab - Cruddy Weather");
   assert.equal(manifest.action.default_popup, "popup.html");
   assert.equal(manifest.chrome_url_overrides.newtab, "newtab.html");
   assert.ok(manifest.permissions.includes("topSites"));
