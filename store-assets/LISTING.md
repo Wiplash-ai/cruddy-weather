@@ -2,10 +2,10 @@
 
 ## Product identity
 
-- Name: `Cruddy Weather`
+- Name: `Funny Weather New Tab - Cruddy Weather`
 - Category: `News & Weather`
 - Language: `English (United States)`
-- Version: `0.1.0`
+- Version: `0.1.2`
 - Homepage: `https://labs.wiplash.ai/cruddy-weather/`
 - Support: `https://labs.wiplash.ai/cruddy-weather/support/`
 - Privacy: `https://labs.wiplash.ai/cruddy-weather/privacy/`
@@ -15,7 +15,17 @@
 
 ## Short description
 
-Weather, web search, and favorite sites—with a forecast that has something to say.
+Turn every new tab into a U.S. weather forecast with current conditions, alerts, search, frequent sites, and adjustable attitude.
+
+## Search terms
+
+- `weather new tab`
+- `weather forecast`
+- `7 day forecast`
+- `local weather`
+- `weather alerts`
+- `new tab dashboard`
+- `funny weather`
 
 ## Full description
 
